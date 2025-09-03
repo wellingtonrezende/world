@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WorldByte</title>
+  <meta name="description" content="WorldByte — Tecnologia e Software. Desenvolvimento de sites e aplicativos, consultoria em TI e manutenção em equipamentos de informática." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="grid"></div>
+
+  <header aria-label="Topo">
+    <img src="img/logo.webp" alt="WorldByte Logo" width="500" height="600"/>
+    <div class="brand" aria-hidden="true">WorldByte • Tecnologia e Software</div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titulo">
+      <h1 id="titulo" class="glow">Construindo algo incrível 🚀</h1>
+      <p class="subtitle">Desenvolvemos soluções sob medida com performance, segurança e escalabilidade.</p>
+    </section>
+
+    <section class="cards" aria-label="Serviços">
+      <article class="card">
+        <div class="tag">Serviços</div>
+        <h3>Desenvolvimento de <strong>sites</strong> e <strong>aplicativos</strong></h3>
+        <p>Projetos sob medida, performance, SEO e integrações (pagamentos, APIs e automações).</p>
+      </article>
+
+      <article class="card">
+        <div class="tag">Serviços</div>
+        <h3>Consultoria em <strong>TI</strong></h3>
+        <p>Diagnóstico, arquitetura de soluções, segurança, nuvem e melhoria de processos.</p>
+      </article>
+
+      <article class="card">
+        <div class="tag">Serviços</div>
+        <h3>Manutenção em equipamentos de <strong>informática</strong></h3>
+        <p>Computadores e notebooks: upgrade, formatação, limpeza, backup e suporte técnico.</p>
+      </article>
+    </section>
+
+    <section class="cta" aria-label="Contato">
+      <div class="phone">WhatsApp: (31) 98228-3299</div>
+      <div class="actions">
+        <a class="btn" href="https://wa.me/5531982283299?text=Ol%C3%A1%20WorldByte!%20Quero%20falar%20sobre%20um%20projeto%20%F0%9F%9A%80" target="_blank" rel="noopener">
+          💬 Falar no WhatsApp
+        </a>
+        <a class="btn secondary" href="mailto:contato@worldbyte.com.br?subject=Contato%20-%20WorldByte">
+          ✉️ Enviar e-mail
+        </a>
+      </div>
+      <div class="footer">© <span id="y"></span> WorldByte — Tecnologia e Software. Todos os direitos reservados.</div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
