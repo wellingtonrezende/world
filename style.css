@@ -8,8 +8,12 @@
       --text:#e6edf7;
       --accent:#62ffb8;
     }
+
     *{box-sizing:border-box}
-    html,body{height:100%}
+    html,body{
+      height:100%
+    }
+
     body{
       margin:0;
       font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
@@ -43,7 +47,7 @@
     header{
       max-width:1100px; 
       margin:0 auto; 
-      padding:20px 10px 0; 
+      padding:20px 20px 0; 
       display:block; 
       align-items:center; 
       gap:14px;     
@@ -58,9 +62,13 @@
 
     }
     header .brand{
-      letter-spacing:.5px; font-weight:800; font-size:1.05rem;
+      letter-spacing:.5px; 
+      font-weight:800; 
+      font-size:1.05rem;
       background:linear-gradient(90deg, var(--brand2), var(--accent));
-      -webkit-background-clip:text; background-clip:text; color:transparent;
+      -webkit-background-clip:text; 
+      background-clip:text; 
+      color:transparent;
       text-transform:uppercase;
       
     }
@@ -68,18 +76,21 @@
     main{
       max-width:1100px; 
       margin:0 auto; 
-      padding: 60px 16px; 
+      padding: 60px 20px 80px; 
       display:grid; 
       gap:28px;
     }
 
     .hero{
-      display:grid; gap:16px; text-align:center; place-items:center;
-      padding:28px 18px 10px;
+      display:grid; 
+      gap:12px; 
+      text-align:center; 
+      place-items:center;
+      padding:16px 18px 10px;
     }
     h1{
       font-size:clamp(1.9rem, 2.5vw + 1.1rem, 3.2rem);
-      margin:8px 0 6px;
+      margin:8px 0 8px;
       line-height:1.05;
       letter-spacing:-.02em;
     }
