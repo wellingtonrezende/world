@@ -23,7 +23,10 @@
     }
 
     .bg{
-      position:fixed; inset:0; z-index:-2; filter:blur(40px) saturate(120%);
+      position:fixed; 
+      inset:0;
+      z-index:-2; 
+      filter:blur(40px) saturate(120%);
       background:
         radial-gradient(600px 300px at 85% 20%, rgba(21,209,197,.20), transparent 60%),
         radial-gradient(500px 280px at 15% 80%, rgba(255,209,102,.18), transparent 60%),
@@ -168,6 +171,7 @@
       max-width: 600px; /* mas não passa de 600px */
       height: auto;
       margin-top: 15px;
+      border-radius: 5%;
   
 }
      .consultor {
@@ -175,6 +179,7 @@
       max-width: 600px; /* mas não passa de 600px */
       height: auto;
       margin-top: 15px;
+      border-radius: 5%;
   
 }
       .manutenção {
@@ -182,11 +187,6 @@
       max-width: 600px; /* mas não passa de 600px */
       height: auto;
       margin-top: 15px;
+      border-radius: 5%;
   
-}
-
-
-  
-
-
-  
+}  
