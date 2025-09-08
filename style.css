@@ -115,10 +115,36 @@
       text-align:center; color:#9db1d3; opacity:.8; font-size:.85rem; margin-top:26px;
     }
     .address {
-     font-weight:500;
-     margin-top:6px;
+       font-weight:500;
+       margin-top:6px;
       color:var(--muted);
       font-size:0.95rem;
 }
+
+    .desenvolvedor {
+      width: 100%;    /* ocupa toda a largura disponível */
+      max-width: 600px; /* mas não passa de 600px */
+      height: auto;
+      margin-top: 15px;
+  
+}
+     .consultor {
+      width: 100%;    /* ocupa toda a largura disponível */
+      max-width: 600px; /* mas não passa de 600px */
+      height: auto;
+      margin-top: 15px;
+  
+}
+      .manutenção {
+      width: 100%;    /* ocupa toda a largura disponível */
+      max-width: 600px; /* mas não passa de 600px */
+      height: auto;
+      margin-top: 15px;
+  
+}
+
+
+  
+
 
   
