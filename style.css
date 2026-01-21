@@ -380,3 +380,41 @@
   background: rgba(98,255,184,.12);
   border: 1px solid rgba(98,255,184,.35);
 }
+
+/* =========================
+   CORREÇÃO DE PADRÃO VISUAL
+========================= */
+
+/* Garante que TODAS as seções sigam o mesmo eixo */
+header,
+main,
+.cta {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Corrige espaçamento da navbar */
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Garante alinhamento perfeito com o main */
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Evita cards “esticados” visualmente */
+.cards {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Centraliza CTA corretamente */
+.cta {
+  text-align: center;
+}

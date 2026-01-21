@@ -4,19 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>WorldByte</title>
-  <meta name="description" content="WorldByte — Tecnologia e Software. Desenvolvimento de sites e aplicativos, consultoria em TI e manutenção em equipamentos de informática." />
+  <meta name="description" content="WorldByte — Tecnologia e Software." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- BACKGROUND -->
+<div class="bg"></div>
+<div class="grid"></div>
+
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="index.html" class="logo">WorldByte</a>
 
     <ul class="nav-links">
       <li><a href="index.html">Início</a></li>
+
       <li class="dropdown">
         <a href="#">Serviços ▾</a>
         <ul class="dropdown-menu">
@@ -25,89 +32,97 @@
           <li><a href="servicos-manutencao.html">Manutenção</a></li>
         </ul>
       </li>
-      <li><a href="sobre.html" target="_blank">Sobre</a></li>
-      <li><a href="contato.html" target="_blank">Contato</a></li>
+
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
     </ul>
   </div>
 </nav>
 
+<!-- HEADER -->
+<header>
+  <img src="img/logo02.png" alt="WorldByte" />
+</header>
 
-  <div class="bg"></div>
-  <div class="grid"></div>
+<!-- CONTEÚDO -->
+<main>
 
-  <header aria-label="Topo">
-    <img src="img/logo02.png" alt="WorldByte" width="500" height="600"/>
-    <div class="brand" aria-hidden="true"></div>
-  </header>
-
-  <main>
-    <section class="hero" aria-labelledby="titulo">
-      <h1 id="titulo" class="glow">Construindo algo incrível 🚀</h1>
-      <p class="subtitle">“Desenvolvemos soluções personalizadas que unem performance, segurança e flexibilidade para impulsionar o seu negócio.”</p>
-    </section>
-
-    <section class="cards" aria-label="Serviços">
-  <article class="card">
-    <div class="tag">Serviços</div>
-    <h3>Desenvolvimento de <strong>sites</strong> e <strong>app's</strong></h3>
-    <p>
-      Projetos sob medida, performance, SEO e integrações (pagamentos, APIs e automações).
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="glow">Construindo algo incrível 🚀</h1>
+    <p class="subtitle">
+      Desenvolvemos soluções personalizadas que unem performance,
+      segurança e flexibilidade para impulsionar o seu negócio.
     </p>
+  </section>
 
-    <a class="ver-mais" href="servicos-desenvolvimento.html" target="_blank" rel="noopener noreferrer">
-      Ver mais →
-    </a>
+  <!-- SERVIÇOS -->
+  <section class="cards">
 
-    <img class="desenvolvedor" src="img/desenvolvedor.png" alt="Desenvolvedor">
-  </article>
+    <article class="card">
+      <div class="tag">Serviços</div>
+      <h3>Desenvolvimento de <strong>sites</strong> e <strong>app's</strong></h3>
+      <p>Projetos sob medida, performance, SEO e integrações.</p>
 
-  <article class="card">
-    <div class="tag">Serviços</div>
-    <h3>Consultoria em <strong>TI</strong></h3>
-    <p>
-      Diagnóstico, arquitetura de soluções, segurança, nuvem e melhoria de processos.
-    </p>
+      <a class="ver-mais" href="servicos-desenvolvimento.html" target="_blank">
+        Ver mais →
+      </a>
 
-    <a class="ver-mais" href="servicos-consultoria.html" target="_blank" rel="noopener noreferrer">
-      Ver mais →
-    </a>
+      <img class="desenvolvedor" src="img/desenvolvedor.png" alt="Desenvolvedor">
+    </article>
 
-    <img class="consultor" src="img/consultor.png" alt="Consultoria">
-  </article>
+    <article class="card">
+      <div class="tag">Serviços</div>
+      <h3>Consultoria em <strong>TI</strong></h3>
+      <p>Diagnóstico, segurança, nuvem e melhoria de processos.</p>
 
-  <article class="card">
-    <div class="tag">Serviços</div>
-    <h3>Manutenção em equipamentos de <strong>informática</strong></h3>
-    <p>
-      Manutenção e suporte inteligente para computadores e notebooks.
-    </p>
+      <a class="ver-mais" href="servicos-consultoria.html" target="_blank">
+        Ver mais →
+      </a>
 
-    <a class="ver-mais" href="servicos-manutencao.html" target="_blank" rel="noopener noreferrer">
-      Ver mais →
-    </a>
+      <img class="consultor" src="img/consultor.png" alt="Consultoria">
+    </article>
 
-    <img class="manutenção" src="img/manutencao.png" alt="Manutenção">
-  </article>
-</section>
+    <article class="card">
+      <div class="tag">Serviços</div>
+      <h3>Manutenção em equipamentos de <strong>informática</strong></h3>
+      <p>Manutenção e suporte inteligente.</p>
 
+      <a class="ver-mais" href="servicos-manutencao.html" target="_blank">
+        Ver mais →
+      </a>
 
-    <section class="cta" aria-label="Contato">
-      <div class="phone">WhatsApp: (31) 98228-3299</div>
-      <div class="address">📍 Rua Alfa, 339 - Sta.Cruz, Conselheiro Lafaiete - MG</div>
-      <div class="actions">
-        <a class="btn" href="https://wa.me/5531982283299?text=Ol%C3%A1%20WorldByte!%20Quero%20falar%20sobre%20um%20projeto%20%F0%9F%9A%80" target="_blank" rel="noopener">
-          💬 Falar no WhatsApp
-        </a>
-        <a class="btn secondary" href="mailto:contato@worldbyte.com.br?subject=Contato%20-%20WorldByte">
-          ✉️ Enviar e-mail
-        </a>
-      </div>
-      <div class="footer">© <span id="y"></span> WorldByte — Tecnologia e Software. Todos os direitos reservados.</div>
-    </section>
-  </main>
+      <img class="manutenção" src="img/manutencao.png" alt="Manutenção">
+    </article>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="phone">WhatsApp: (31) 98228-3299</div>
+    <div class="address">
+      📍 Rua Alfa, 339 - Sta. Cruz, Conselheiro Lafaiete - MG
+    </div>
+
+    <div class="actions">
+      <a class="btn" href="https://wa.me/5531982283299" target="_blank">
+        💬 Falar no WhatsApp
+      </a>
+      <a class="btn secondary" href="mailto:contato@worldbyte.com.br">
+        ✉️ Enviar e-mail
+      </a>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> WorldByte — Todos os direitos reservados.
+    </div>
+  </section>
+
+</main>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
