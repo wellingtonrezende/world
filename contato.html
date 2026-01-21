@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato | WorldByte</title>
+
+  <meta name="description" content="Entre em contato com a WorldByte. Desenvolvimento de software, consultoria em TI e manutenção em informática." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Mesmo CSS do site -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="grid"></div>
+
+  <header>
+    <a href="index.html">
+      <img src="img/logo02.png" alt="WorldByte">
+    </a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="glow">Contato 📬</h1>
+      <p class="subtitle">
+        Fale com a WorldByte e vamos transformar sua ideia em solução.
+      </p>
+    </section>
+
+    <!-- INFORMAÇÕES -->
+    <section class="cards">
+
+      <article class="card">
+        <h3>📞 Contatos</h3>
+        <p><strong>WhatsApp:</strong> (31) 98228-3299</p>
+        <p style="margin-top:6px"><strong>E-mail:</strong> contato@worldbyte.com.br</p>
+        <p style="margin-top:6px"><strong>Endereço:</strong><br>
+          Rua Alfa, 339 – Santa Cruz<br>
+          Conselheiro Lafaiete – MG
+        </p>
+      </article>
+
+      <!-- FORMULÁRIO -->
+      <article class="card">
+        <h3>✉️ Envie uma mensagem</h3>
+
+        <!-- FORMULÁRIO FUNCIONAL -->
+        <form class="contact-form"
+          action="https://formsubmit.co/contato@worldbyte.com.br"
+          method="POST">
+
+          <!-- Configurações -->
+          <input type="hidden" name="_subject" value="Contato pelo site - WorldByte">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <label>
+            Nome
+            <input type="text" name="name" placeholder="Seu nome" required>
+          </label>
+
+          <label>
+            E-mail
+            <input type="email" name="email" placeholder="seu@email.com" required>
+          </label>
+
+          <label>
+            Assunto
+            <input type="text" name="assunto" placeholder="Ex: Desenvolvimento de site">
+          </label>
+
+          <label>
+            Mensagem
+            <textarea name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+          </label>
+
+          <button class="btn" type="submit">
+            Enviar mensagem
+          </button>
+        </form>
+      </article>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="phone">💬 Atendimento rápido via WhatsApp</div>
+
+      <div class="actions">
+        <a class="btn" href="https://wa.me/5531982283299?text=Ol%C3%A1%20WorldByte!%20Entrei%20em%20contato%20pelo%20site%20📬" target="_blank" rel="noopener">
+          Falar no WhatsApp
+        </a>
+
+        <a class="btn secondary" href="index.html">
+          ⬅️ Voltar ao site
+        </a>
+      </div>
+
+      <div class="footer">
+        © <span id="y"></span> WorldByte — Tecnologia e Software
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
