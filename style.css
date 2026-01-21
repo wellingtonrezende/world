@@ -411,12 +411,13 @@ h1{
 
 .contact-form{
   display:grid;
-  gap:14px;
+  grid-template-columns: 1fr;
+  gap:16px;
 }
 
 .contact-form label{
   font-size:.8rem;
-  font-weight:600;
+  font-weight:60;
   color:var(--muted);
 }
 
@@ -426,7 +427,7 @@ h1{
   padding:14px 16px;
   border-radius:14px;
   border:1px solid rgba(255,255,255,.12);
-  background:rgba(11,18,32,.6);
+  background:rgba(12, 19, 32, 0.6);
   color:var(--text);
   font-size:.95rem;
 }
