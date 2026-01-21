@@ -12,94 +12,91 @@
 </head>
 <body>
 
-<!-- BACKGROUND -->
-<div class="bg"></div>
-<div class="grid"></div>
+  <!-- BACKGROUND -->
+  <div class="bg"></div>
+  <div class="grid"></div>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="logo">WorldByte</a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">WorldByte</a>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Início</a></li>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
 
-      <li class="dropdown">
-        <a href="#">Serviços ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="servicos-desenvolvimento.html">Desenvolvimento</a></li>
-          <li><a href="servicos-consultoria.html">Consultoria em TI</a></li>
-          <li><a href="servicos-manutencao.html">Manutenção</a></li>
-        </ul>
-      </li>
+        <li class="dropdown">
+          <a href="#">Serviços ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="servicos-desenvolvimento.html">Desenvolvimento</a></li>
+            <li><a href="servicos-consultoria.html">Consultoria em TI</a></li>
+            <li><a href="servicos-manutencao.html">Manutenção</a></li>
+          </ul>
+        </li>
 
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-  </div>
-</nav>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- HEADER -->
-<header>
-  <img src="img/logo02.png" alt="WorldByte" />
-</header>
+  <!-- HEADER -->
+  <header>
+    <img src="img/logo02.png" alt="WorldByte">
+  </header>
 
-<!-- CONTEÚDO -->
-<main>
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1 class="glow">Construindo algo incrível 🚀</h1>
-    <p class="subtitle">
-      Desenvolvemos soluções personalizadas que unem performance,
-      segurança e flexibilidade para impulsionar o seu negócio.
-    </p>
-  </section>
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="glow">Construindo algo incrível 🚀</h1>
+      <p class="subtitle">
+        Desenvolvemos soluções personalizadas que unem performance,
+        segurança e flexibilidade para impulsionar o seu negócio.
+      </p>
+    </section>
 
-  <!-- SERVIÇOS -->
-  <section class="cards">
+    <!-- SERVIÇOS -->
+    <section class="cards">
 
-    <article class="card">
-      <div class="tag">Serviços</div>
-      <h3>Desenvolvimento de <strong>sites</strong> e <strong>app's</strong></h3>
-      <p>Projetos sob medida, performance, SEO e integrações.</p>
+      <article class="card">
+        <div class="tag">Serviços</div>
+        <h3>Desenvolvimento de <strong>sites</strong> e <strong>app's</strong></h3>
+        <p>Projetos sob medida, performance, SEO e integrações.</p>
+        <a class="ver-mais" href="servicos-desenvolvimento.html">
+          Ver mais →
+        </a>
+        <img class="desenvolvedor" src="img/desenvolvedor.png" alt="Desenvolvedor">
+      </article>
 
-      <a class="ver-mais" href="servicos-desenvolvimento.html" target="_blank">
-        Ver mais →
-      </a>
+      <article class="card">
+        <div class="tag">Serviços</div>
+        <h3>Consultoria em <strong>TI</strong></h3>
+        <p>Diagnóstico, segurança, nuvem e melhoria de processos.</p>
+        <a class="ver-mais" href="servicos-consultoria.html">
+          Ver mais →
+        </a>
+        <img class="consultor" src="img/consultor.png" alt="Consultoria">
+      </article>
 
-      <img class="desenvolvedor" src="img/desenvolvedor.png" alt="Desenvolvedor">
-    </article>
+      <article class="card">
+        <div class="tag">Serviços</div>
+        <h3>Manutenção em equipamentos de <strong>informática</strong></h3>
+        <p>Manutenção e suporte inteligente.</p>
+        <a class="ver-mais" href="servicos-manutencao.html">
+          Ver mais →
+        </a>
+        <img class="manutenção" src="img/manutencao.png" alt="Manutenção">
+      </article>
 
-    <article class="card">
-      <div class="tag">Serviços</div>
-      <h3>Consultoria em <strong>TI</strong></h3>
-      <p>Diagnóstico, segurança, nuvem e melhoria de processos.</p>
+    </section>
 
-      <a class="ver-mais" href="servicos-consultoria.html" target="_blank">
-        Ver mais →
-      </a>
+  </main>
 
-      <img class="consultor" src="img/consultor.png" alt="Consultoria">
-    </article>
-
-    <article class="card">
-      <div class="tag">Serviços</div>
-      <h3>Manutenção em equipamentos de <strong>informática</strong></h3>
-      <p>Manutenção e suporte inteligente.</p>
-
-      <a class="ver-mais" href="servicos-manutencao.html" target="_blank">
-        Ver mais →
-      </a>
-
-      <img class="manutenção" src="img/manutencao.png" alt="Manutenção">
-    </article>
-
-  </section>
-
-  <!-- CTA -->
+  <!-- CTA (FORA DO MAIN – ALINHAMENTO CORRETO) -->
   <section class="cta">
     <div class="phone">WhatsApp: (31) 98228-3299</div>
+
     <div class="address">
       📍 Rua Alfa, 339 - Sta. Cruz, Conselheiro Lafaiete - MG
     </div>
@@ -118,11 +115,9 @@
     </div>
   </section>
 
-</main>
-
-<script>
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
