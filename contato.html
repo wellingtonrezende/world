@@ -52,39 +52,39 @@
         <h3>✉️ Envie uma mensagem</h3>
 
         <!-- FORMULÁRIO FUNCIONAL -->
-        <form class="contact-form"
-          action="https://formsubmit.co/contato@worldbyte.com.br"
-          method="POST">
+        <form class="contact-form" id="contactForm">
+  
+  <label>
+    Nome
+    <input type="text" id="name" placeholder="Seu nome" required>
+  </label>
 
-          <!-- Configurações -->
-          <input type="hidden" name="_subject" value="Contato pelo site - WorldByte">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
+  <label>
+    E-mail
+    <input type="email" id="email" placeholder="seu@email.com" required>
+  </label>
 
-          <label>
-            Nome
-            <input type="text" name="name" placeholder="Seu nome" required>
-          </label>
+  <label>
+    Assunto
+    <input type="text" id="assunto" placeholder="Ex: Desenvolvimento de site">
+  </label>
 
-          <label>
-            E-mail
-            <input type="email" name="email" placeholder="seu@email.com" required>
-          </label>
+  <label>
+    Mensagem
+    <textarea id="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+  </label>
 
-          <label>
-            Assunto
-            <input type="text" name="assunto" placeholder="Ex: Desenvolvimento de site">
-          </label>
+  <button class="btn" type="submit">
+    Enviar mensagem
+  </button>
 
-          <label>
-            Mensagem
-            <textarea name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
-          </label>
+  <!-- Mensagem de sucesso -->
+  <div class="success-message" id="successMessage">
+    ✅ Mensagem enviada com sucesso!  
+    <br>Em breve entraremos em contato.
+  </div>
+</form>
 
-          <button class="btn" type="submit">
-            Enviar mensagem
-          </button>
-        </form>
       </article>
 
     </section>
@@ -113,5 +113,52 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const successMessage = document.getElementById('successMessage');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const assunto = document.getElementById('assunto').value;
+    const message = document.getElementById('message').value;
+
+    /* ===== ENVIO PARA E-MAIL (FormSubmit) ===== */
+    fetch("https://formsubmit.co/ajax/contato@worldbyte.com.br", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        assunto: assunto,
+        message: message
+      })
+    });
+
+    /* ===== ENVIO PARA WHATSAPP ===== */
+    const whatsappMessage =
+      `Olá, me chamo ${name}%0A` +
+      `E-mail: ${email}%0A` +
+      `Assunto: ${assunto}%0A` +
+      `Mensagem: ${message}`;
+
+    window.open(
+      `https://wa.me/5531982283299?text=${whatsappMessage}`,
+      '_blank'
+    );
+
+    /* ===== MENSAGEM DE SUCESSO ===== */
+    successMessage.style.display = 'block';
+    form.reset();
+  });
+</script>
+
+
 </body>
 </html>
