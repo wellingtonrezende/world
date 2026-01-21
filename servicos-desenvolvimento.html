@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desenvolvimento de Sites e App's | WorldByte</title>
+
+  <meta name="description" content="Desenvolvimento de sites e aplicativos sob medida. Performance, segurança, SEO, sistemas web e apps modernos para empresas e profissionais." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Reaproveite o MESMO CSS do site principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">WorldByte</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li class="dropdown">
+        <a href="#">Serviços ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="servicos-desenvolvimento.html">Desenvolvimento</a></li>
+          <li><a href="servicos-consultoria.html">Consultoria em TI</a></li>
+          <li><a href="servicos-manutencao.html">Manutenção</a></li>
+        </ul>
+      </li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <div class="bg"></div>
+  <div class="grid"></div>
+
+  <header>
+    <a href="index.html">
+      <img src="img/logo02.png" alt="WorldByte">
+    </a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="glow">Desenvolvimento de Sites e App's 🚀</h1>
+      <p class="subtitle">
+        Criamos soluções digitais modernas, rápidas e seguras para transformar ideias em produtos reais.
+      </p>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="card">
+      <h3>💻 O que desenvolvemos</h3>
+      <p>
+        Atuamos no desenvolvimento de <strong>sites institucionais</strong>, 
+        <strong>sistemas web</strong> e <strong>aplicativos</strong> sob medida, focando
+        em performance, segurança e escalabilidade.
+      </p>
+      <p style="margin-top:10px">
+        Cada projeto é pensado para atender exatamente a necessidade do seu negócio,
+        garantindo uma experiência fluida para o usuário final.
+      </p>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="cards">
+
+      <article class="card">
+        <div class="tag">Serviço</div>
+        <h3>🌐 Sites Institucionais e Profissionais</h3>
+        <p>
+          Sites modernos, responsivos e otimizados para SEO, ideais para empresas,
+          profissionais liberais e marcas que querem presença digital forte.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="tag">Serviço</div>
+        <h3>⚙️ Sistemas Web Personalizados</h3>
+        <p>
+          Desenvolvimento de sistemas sob medida como painéis administrativos,
+          sistemas de gestão, controle de estoque, dashboards e plataformas online.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="tag">Serviço</div>
+        <h3>📱 Aplicativos Web e Mobile</h3>
+        <p>
+          Aplicativos modernos, rápidos e seguros, acessíveis via navegador ou
+          dispositivos móveis, focados em usabilidade e desempenho.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="tag">Serviço</div>
+        <h3>🔗 Integrações e Automações</h3>
+        <p>
+          Integração com APIs, gateways de pagamento, WhatsApp, sistemas externos,
+          automações de processos e soluções inteligentes.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="tag">Serviço</div>
+        <h3>🚀 Performance e SEO</h3>
+        <p>
+          Otimização de velocidade, boas práticas de SEO, acessibilidade e código limpo,
+          garantindo melhor posicionamento no Google.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="tag">Serviço</div>
+        <h3>🔒 Segurança e Manutenção</h3>
+        <p>
+          Implementação de boas práticas de segurança, backups, atualizações e
+          manutenção contínua dos sistemas.
+        </p>
+      </article>
+
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="card">
+      <h3>🛠️ Tecnologias Utilizadas</h3>
+      <p>
+        Trabalhamos com tecnologias modernas e consolidadas no mercado:
+      </p>
+      <p style="margin-top:10px">
+        HTML5, CSS3, JavaScript, Java, bancos de dados SQL, APIs REST, 
+        hospedagem em nuvem, versionamento com Git e arquitetura escalável.
+      </p>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="phone">💬 Vamos tirar sua ideia do papel?</div>
+
+      <div class="actions">
+        <a class="btn" href="https://wa.me/5531982283299?text=Ol%C3%A1%20WorldByte!%20Quero%20um%20site%20ou%20aplicativo%20🚀" target="_blank" rel="noopener">
+          Falar no WhatsApp
+        </a>
+
+        <a class="btn secondary" href="index.html">
+          ⬅️ Voltar ao site
+        </a>
+      </div>
+
+      <div class="footer">
+        © <span id="y"></span> WorldByte — Tecnologia e Software
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
